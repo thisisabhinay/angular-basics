@@ -1,16 +1,14 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from "@angular/core"
 
 @Component({
-  selector: 'app-habit-item',
-  template: `
-    <li>{{habit.title}} Test</li>
-  `,
-  styles: [
-  ]
+  selector: "app-habit-item",
+  template: ` <li>{{ habit.title }}</li>`,
+  styles: [],
 })
+export class HabitItemComponent implements OnInit {
+  @Input() habit: any
 
-export class HabitItemComponent {
- @Input() habit: any;
+  constructor() {}
 
- constructor() { }
+  ngOnInit(): void {}
 }

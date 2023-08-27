@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HabitItemComponent } from './habit-item/habit-item.component';
+import { HabitListComponent } from './habit-list/habit-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HabitItemComponent
+    HabitItemComponent,
+    HabitListComponent
   ],
   imports: [
     BrowserModule
